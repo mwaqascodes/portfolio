@@ -212,6 +212,60 @@ footer {
   font-size: 1rem;
 }
 
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2rem 0;
+}
+
+.skills-list li {
+  background: var(--card);
+  color: var(--primary);
+  border-radius: var(--radius);
+  padding: 0.7rem 1.2rem;
+  font-weight: 600;
+  box-shadow: var(--shadow);
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  transition: background 0.2s, color 0.2s;
+}
+
+.skills-list li:hover {
+  background: var(--primary);
+  color: #fff;
+}
+
+.faqs-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 800px;
+  margin: 0 auto 2rem auto;
+}
+
+.faq-item {
+  background: var(--card);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 1.5rem 2rem;
+  transition: box-shadow 0.2s;
+}
+
+.faq-item h4 {
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.faq-item p {
+  color: #444;
+  font-size: 1rem;
+  margin: 0;
+}
+
 @media (max-width: 900px) {
   .hero-content {
     flex-direction: column;
@@ -224,5 +278,15 @@ footer {
   .projects-grid {
     flex-direction: column;
     gap: 1.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .skills-list {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .faqs-list {
+    padding: 0 1rem;
   }
 }
